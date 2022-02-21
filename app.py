@@ -54,13 +54,13 @@ def validar_16a99():
           print(f'{escritura} Veinti{v}') # Evalua si es del 21 hasta 29
           break
     else:
-      if valor > 30 and valor < 40: # Evalua si es de 31 a 39
+      if valor == 30:
+        print(f'{escritura} Treinta')  # Evalua si es 30
+      elif valor > 30 and valor < 40: # Evalua si es de 31 a 39
         for k, v in numeros_1_9.items():
           if k == escribir_num[1]:
             print(f'{escritura} Treinta y {v}')
             break
-      elif valor == 30:
-        print(f'{escritura} Treinta')  # Evalua si es 30
   if valor == 40:
     print(f'{escritura} Cuarenta') # Evalua si es 40
   elif valor > 40 and valor < 50: # Evalua si es de 41 a 49
